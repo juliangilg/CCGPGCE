@@ -35,7 +35,7 @@ def MAjVot(Y, K):
 
 # Multiple annotators' simulation
 
-def multiple_annotators(R = 5, NrP=1, Xtrain, ytrain):
+def multiple_annotators(R, NrP, Xtrain, ytrain):
 
   '''
   To simulate labels from multiple annotators, we assume them to correspond to
