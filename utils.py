@@ -138,7 +138,7 @@ def multiple_annotators(R, NrP, Xtrain, ytrain):
 
   return Lam_r, Ytrain, iAnn, Vref
 
-def run_adam(model, iterations, lr):
+def run_adam(model, iterations, lr,train_dataset):
     """
     Utility function running the Adam optimizer
 
