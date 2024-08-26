@@ -5,6 +5,7 @@ from gpflow.ci_utils import reduce_in_tests
 from gpflow.utilities import print_summary
 from gpflow.quadrature import hermgauss
 from gpflow.quadrature.deprecated import mvnquad, ndiagquad, ndiag_mc
+from check_shapes import check_shapes, inherit_check_shapes
 
 
 
