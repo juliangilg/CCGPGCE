@@ -50,7 +50,7 @@ def multiple_annotators(R, NrP, Xtrain, ytrain):
   where $\tilde{y}_n$ is the flipped version of $y_n$
   '''
   N = Xtrain.size
-  K = np.unique(ytrain)
+  K = len(np.unique(ytrain))
   # Define the functions to combine following the Semiparametric latent factor model.
   u_q = np.empty((Xtrain.shape[0],3))
   u_q[:,0,None] = 4.5*np.cos(2*np.pi*Xtrain + 1.5*np.pi) - \
