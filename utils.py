@@ -49,7 +49,7 @@ def multiple_annotators(R, NrP, Xtrain, ytrain):
   3. If $\z_{r,n}>0.5$, $y_n^r=y_n$, and $y_n^r=\tilde{y}_n$ if $\z_{r,n}\le 0.5$,
   where $\tilde{y}_n$ is the flipped version of $y_n$
   '''
-  N = Xtrain.size[0]
+  N = Xtrain.size
   # Define the functions to combine following the Semiparametric latent factor model.
   u_q = np.empty((Xtrain.shape[0],3))
   u_q[:,0,None] = 4.5*np.cos(2*np.pi*Xtrain + 1.5*np.pi) - \
